@@ -4,14 +4,29 @@
   box-sizing: border-box;
   font-size: 18px;
 }
+.container {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.row {
+  margin-left: -20px;
+  margin-right: -20px;
+}
 
 .coll {
   position: relative;
-  margin: 5px;
-  padding: 5px;
   text-align: left;
+
+}
+
+.section {
   background-color: grey;
-  border: 3px solid black;
+  border: 1px black solid;
+  margin: 10px;
+}
+
+p {
+  padding: 15px;
 }
 
 h1 {
@@ -24,19 +39,19 @@ h1 {
 }
 
 .title {
-  border: 1px solid black;
+  border: 2px solid black;
   font-size: 125%;
   width: 130px;
   height: 30px;
   position: absolute;
   right: 0;
-  top: 0;
-  margin-top: 0px;
+  top: 10;
+  margin-right: 10px;
   text-align: center;
 }
 
 #title1 {
-  background-color: blue;
+  background-color: aqua;
 }
 
 #title2 {
@@ -51,8 +66,6 @@ h1 {
 @media (min-width: 992px) {
   .col-lg {
     float: left;
-    border: 1px solid black;
-    clear: right;
     width: 33.33%;
   }
 }
@@ -60,7 +73,6 @@ h1 {
 @media (min-width: 768px) and (max-width: 991px) {
   .col-md-6, .col-md-12 {
     float: left;
-    border: 1px solid black;
   }
   .col-md-6 {
     width: 50%;
@@ -74,6 +86,5 @@ h1 {
 @media (max-width: 767px) {
   .col-sm {
     float: left;
-    border: 1px solid black;
     width: 100%;
   }
