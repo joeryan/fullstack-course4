@@ -1,14 +1,79 @@
+/* ----- Base styling ----- */
 * {
   font-family: "Lucidia Console", Courier, sans-serif;
   box-sizing: border-box;
+  font-size: 18px;
+}
+
+.coll {
+  position: relative;
+  margin: 5px;
+  padding: 5px;
+  text-align: left;
+  background-color: grey;
+  border: 3px solid black;
 }
 
 h1 {
   font-size: 175%;
-  
+  text-align: center;
+}
 
+.spacer {
+  height: 30px;
 }
 
 .title {
-  font-size: 125%
+  border: 1px solid black;
+  font-size: 125%;
+  width: 130px;
+  height: 30px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin-top: 0px;
+  text-align: center;
 }
+
+#title1 {
+  background-color: blue;
+}
+
+#title2 {
+  background-color: red;
+}
+
+#title3 {
+  background-color: yellow;
+}
+
+/* -------- Desktops -------- */
+@media (min-width: 992px) {
+  .col-lg {
+    float: left;
+    border: 1px solid black;
+    clear: right;
+    width: 33.33%;
+  }
+}
+/* -------- Tablet devices ------- */
+@media (min-width: 768px) and (max-width: 991px) {
+  .col-md-6, .col-md-12 {
+    float: left;
+    border: 1px solid black;
+  }
+  .col-md-6 {
+    width: 50%;
+  }
+  .col-md-12 {
+    width: 100%;
+  }
+}
+
+/* -------- Mobile devices ------- */
+@media (max-width: 767px) {
+  .col-sm {
+    float: left;
+    border: 1px solid black;
+    width: 100%;
+  }
